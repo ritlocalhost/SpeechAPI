@@ -5,20 +5,24 @@
 	<link href='https://fonts.googleapis.com/css?family=Fira+Sans' rel='stylesheet' type='text/css'>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="style.css" />
-	<script src="recognition.js"></script>
-	<title>Speech Recognition</title>
+	<script src="relay.js"></script>
+	<title>Relay</title>
 </head>
 
 <body>
 	<main>
-		<h1>I hear voices</h1>
+		<h1>Relay</h1>
 
 		<div>
-			<textarea id="output" disabled></textarea>
+			<button onclick="listen();">Listen</button>
 		</div>
 
 		<div>
-			<button onclick="start();">What do they say?</button>
+			<textarea id="buffer"></textarea>
+		</div>
+
+		<div>
+			<button onclick="speak();">Speak</button>
 		</div>
 	</main>
 </body>
